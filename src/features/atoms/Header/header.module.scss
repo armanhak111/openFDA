@@ -1,0 +1,45 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .headerContainer{
+        width: 80%;
+        height: 60px;
+        margin-top: 50px;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(34px);
+        background: rgba(20, 21, 40, 0.94);
+        .buttonWrapper{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            .button {
+                width: 130px;
+                height: 64px;
+                border: 1px solid #1875FC;
+                border-radius: 18px;
+                background: linear-gradient(229.09deg, rgba(24, 117, 252, 0.12) 3.76%, rgba(0, 221, 251, 0.12) 115.42%);
+                font-size: 18px;
+                font-family: 'Times New Roman', Times, serif;
+                color: wheat;
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    box-shadow: 0px 4px 36px rgba(4, 203, 251, 0.4);               
+                }
+            }
+            .active {
+                background: linear-gradient(229.09deg, #1875FC 3.76%, #00DDFB 115.42%);
+            }
+        }
+        span {
+            color: #1875FC;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 45px;
+        }
+    }
+}
